@@ -4,6 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^9.6.4",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",
     "ts-loader": "^9.4.2",
