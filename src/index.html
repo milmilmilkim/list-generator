@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Webpack</title>
-</head>
-<body>
-  <h1 class="bg-pink-500">Hello, world!</h1>
-  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webpack</title>
+  </head>
+  <body>
+    <div
+      id="container"
+      class="container max-w-4xl mx-auto mt-8 border rounded-md px-1 py-1">
+      <h2 class="text-center text-3xl my-3">🥺</h2>
+      <hr class="border-top my-3" />
+
+      <div class="flex space-x-2">
+        <select
+          id="list-select"
+          class="bg-gray-50 border border-gray-300 rounded-md text-gray-900 h-8 w-32">
+          <option value="ul">ul</option>
+          <option value="ol">ol</option>
+          <option value="p">p</option>
+        </select>
+
+        <button
+          id="add-btn"
+          class="bg-pink-500 px-2 py-0 rounded-md text-white text-xs h-8">
+          add
+        </button>
+
+        <button
+          id="delete-btn"
+          class="bg-blue-500 px-2 py-0 rounded-md text-white text-xs h-8">
+          delete
+        </button>
+      </div>
+
+      <hr class="border-top my-3" />
+
+      <div id="empty-message" class="mb-1 hidden">아직 아무것도 없다!</div>
+
+      <div id="content"></div>
+
+      <hr class="border-top my-3" />
+
+      <div class="flex flex-row-reverse">
+        <button
+          class="bg-indigo-300 py-0 px-2 rounded-md text-white text-xs h-8 mb-1">
+          copy!
+        </button>
+        <button
+          id="generate-btn"
+          class="bg-indigo-300 py-0 px-2 rounded-md text-white text-xs h-8 mb-1">
+          generate!
+        </button>
+      </div>
+      <textarea id="result" disabled class="w-full h-64 resize-none" placeholder="html..."></textarea>
+    </div>
+  </body>
 </html>
