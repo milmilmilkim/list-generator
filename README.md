@@ -13,3 +13,4 @@
 ![Apr-10-2023 13-28-02](https://user-images.githubusercontent.com/114050439/230826043-24ed481b-ff7c-4950-8071-a113363edc74.gif)
 
 ## github page
+https://milmilmilkim.github.io/list-generator/
