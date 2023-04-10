@@ -88,6 +88,12 @@ const addChildInput = (parentElement: HTMLElement, value: TagType) => {
 
   input.addEventListener('input', handleInput);
 
+  input.addEventListener('keydown', (e: KeyboardEvent) => {
+    if (e.keyCode === 13 || e.which === 13) {
+      addChildInput(parentElement, value);
+    }
+  });
+
   let placeholder;
   if (value === 'ul' || value === 'ol') {
     placeholder = 'li';
@@ -105,6 +111,7 @@ const addChildInput = (parentElement: HTMLElement, value: TagType) => {
   input.setAttribute('data-input-index', inputIndex);
 
   parentElement.appendChild(input);
+  input.focus();
 };
 
 const deleteElement = () => {
